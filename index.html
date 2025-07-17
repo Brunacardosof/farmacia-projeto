@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <section id="top-section">
+        <h1>Home</h1>
+        <h1>Cadastro do Medicamento</h1>
+        <h1>Cadastro de Vacinas</h1>
+        <h1>Cadastro de Cosmeticos</h1>
+    </section>
+    <header>
+        <img src="" alt="">
+        <div>
+            <h1 class="title">Cadastro de Medicamentos</h1>
+            <h1 class="subtitle">Farmacia da gente</h1>
+        </div>
+    </header>
+    <section id="sec-form">
+        <form id="form" onsubmit="addMed()">
+            <div class="form-container">
+                <label for="medName">Nome do Medicamento</label>
+                <input type="text" name="medName" id="fname" required autocomplete="off">
+               
+                <label for="medQtd">Quantidade do Medicamento</label>
+                <input type="text" name="medqtd" id="fqtd" required autocomplete="off">
+                
+                <label for="medClass">Classe do Medicamento</label>
+                <input type="text" name="medclass" id="fclass" required autocomplete="off">
+                
+                <button type="submit" class="submit-button">Cadastrar</button>  
+            </div>
+            <div>
+                <table id="datatable">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome do Medicamento</th>
+                        <th>Quantidade Dispnovel</th>
+                        <th>Classe</th>
+                        <th>Remover</th>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </section>
+    
+    
+</body>
+</html>
